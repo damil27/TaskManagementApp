@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>TaskForm</title>
+    <link rel="stylesheet" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container">
+    <div th:replace="assets/header::header" >
+
+    </div>
+
+
+    <!--    form tags start here-->
+
+
+    <div>
+
+        <form style="margin-top:100px;" th:action="@{/addTask}" th:object="${task}" method="post"  class="col-md-4 offset-lg-4">
+            <h3 class="text-center " style="background:#87ceeb;"> Task Assignment Form</h3>
+            <div class="form-group ">
+                <label for="date">Date</label>
+                <div class="text text-danger" th:if="${#fields.hasErrors('date')}"  th:errors="*{date}" ></div>
+                <input type="date" class="form-control" id="date" th:field="*{date}" placeholder="Enter email">
+
+            </div>
+            <div class="form-group">
+                <label for="startTime">startTime</label>
+                <div class="text text-danger" th:if="${#fields.hasErrors('startTime')}"  th:errors="*{startTime}" ></div>
+                <input type="time" class="form-control" id="startTime" th:field="*{startTime}" >
+
+            </div>
+
+            <div class="form-group">
+                <label for="StopTime">StopTime</label>
+                <div class="text text-danger" th:if="${#fields.hasErrors('StopTime')}"  th:errors="*{StopTime}" ></div>
+                <input type="time" class="form-control" id="StopTime" th:field="*{StopTime}" >
+
+            </div>
+
+            <div class="form-group">
+                <label for="description">description</label>
+                <div class="text text-danger" th:if="${#fields.hasErrors('description')}"  th:errors="*{description}" ></div>
+                <textarea  class="form-control" th:field="*{description}"  id="description" ></textarea>
+
+            </div>
+
+
+            <button type="submit" class="btn btn-outline-primary my-2 my-sm-0">submit-Task</button>
+        </form>
+    </div>
+
+
+
+    <!--    form tags stop here-->
+
+</div>
+
+</body>
+</html>

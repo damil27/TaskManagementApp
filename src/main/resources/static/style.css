@@ -1,0 +1,85 @@
+#intro {
+  width: 100%;
+  background: url("/img/header-bg2.jpg") center bottom no-repeat;
+  background-size: cover;
+  padding: 200px 0 120px 0;
+}
+
+@media (max-width: 991px) {
+  #intro {
+    padding: 140px 0 60px 0;
+  }
+}
+
+@media (max-width: 574px) {
+  #intro {
+    padding: 100px 0 20px 0;
+  }
+}
+
+#intro .intro-info h2 {
+  color: #fff;
+  margin-bottom: 40px;
+  font-size: 48px;
+  font-weight: 700;
+}
+
+#intro .intro-info h2 span {
+  color: #74b5fc;
+  text-decoration: underline;
+}
+
+@media (max-width: 767px) {
+  #intro .intro-info h2 {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+}
+
+#intro .intro-info .btn-get-started, #intro .intro-info .btn-services {
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 0 20px 20px 0;
+  color: #fff;
+}
+
+#intro .intro-info .btn-get-started {
+  background: #007bff;
+  border: 2px solid #007bff;
+  color: #fff;
+}
+
+#intro .intro-info .btn-get-started:hover {
+  background: none;
+  border-color: #fff;
+  color: #fff;
+}
+
+#intro .intro-info .btn-services {
+  border: 2px solid #fff;
+}
+
+#intro .intro-info .btn-services:hover {
+  background: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+#intro .intro-img {
+  width: 50%;
+  float: right;
+}
+
+@media (max-width: 991px) {
+  #intro .intro-img {
+    width: 80%;
+    float: none;
+    margin: 0 auto 25px auto;
+  }
+}

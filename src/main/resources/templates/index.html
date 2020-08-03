@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html  xmlns:th="http://wwww.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link  th:href="@{/style.css}" rel="stylesheet" >
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+    <link rel="stylesheet" href="webjars/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="webjars/font-awesome/5.13.0/css/fontawesome.min.css">
+
+    <script type="text/javascript"  src="webjars/bootstrap/4.3.1/js/bootstrap.min.js" >
+    </script>
+    <script type="text/javascript"  src="webjars/jquery/3.0.0/jquery.min.js" >
+    </script>
+
+
+
+
+</head>
+<body>
+
+ <div class="container">
+     <div th:replace="assets/header::header" ></div>
+ </div>
+     <section id="intro" class="clearfix"  >
+         <div class="container">
+
+             <div class="intro-img">
+
+                 <img src="/img/intro-img.svg" alt="" class="img-fluid">
+             </div>
+
+             <div class="intro-info">
+                 <h3>“Hard tasks need hard ways.”
+                    <br><span>― Frank Herbert, Dune</span><br>for your business!</h3>
+                 <div>
+                     <a href="#about" class="btn-get-started scrollto">Get Started</a>
+                     <a href="#services" class="btn-services scrollto">Our Services</a>
+                 </div>
+             </div>
+
+         </div>
+     </section><!-- End Intro Section -->
+
+
+
+
+</body>
+</html>
